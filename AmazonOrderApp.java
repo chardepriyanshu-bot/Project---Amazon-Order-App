@@ -6,12 +6,12 @@ public class AmazonOrderApp {
 	public static void main(String[] args) {
 	
 		Scanner sc=new Scanner(System.in);
-	
+		
 		System.out.println("1.Standard Order");
 		System.out.println("2.Prime Order");
 		System.out.println("3.International Order");
 		
-		System.out.println("Enter your order type:");
+		System.out.println("\nSelect your order type:");
 		int orderType=Integer.parseInt(sc.nextLine());
 		if(orderType<=3) {
 		System.out.println("Enter customer name: ");
@@ -42,7 +42,7 @@ public class AmazonOrderApp {
 		  }
 	  }
 		else {
-			System.out.println("Please enter value number.");
+			System.out.println("Incorrect order type number.");
 		}
 		sc.close();
 	}
